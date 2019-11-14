@@ -274,8 +274,8 @@ export const loadFont = (filename: string) => {
   let fontData , systemFontDataLower, systemFontData
   try {
     fontData = loadAppFile(filename)
-    systemFontDataLower = fontData.slice(0, 2048)
-    systemFontData = fontData.slice(2048, 4096)
+    systemFontData = fontData.slice(0, 2048)
+    systemFontDataLower = fontData.slice(2048, 4096)
   } catch (e) {
     console.warn(`Charset font ${filename} not found`)
     systemFontData = loadAppFile('assets/system-charset.bin')
